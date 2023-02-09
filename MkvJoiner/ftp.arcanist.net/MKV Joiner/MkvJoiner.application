@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xrml="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <assemblyIdentity name="MkvJoiner.application" version="1.0.0.0" publicKeyToken="ec7637d690b96b4f" language="neutral" processorArchitecture="x86" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <description asmv2:publisher="MkvJoiner" asmv2:product="MkvJoiner" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <deployment install="true" mapFileExtensions="true">
+    <subscription>
+      <update>
+        <beforeApplicationStartup />
+      </update>
+    </subscription>
+    <deploymentProvider codebase="http://www.arcanist.net/programs/MKV%20Joiner/MkvJoiner.application" />
+  </deployment>
+  <compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">
+    <framework targetVersion="4.0" profile="Client" supportedRuntime="4.0.30319" />
+    <framework targetVersion="4.0" profile="Full" supportedRuntime="4.0.30319" />
+  </compatibleFrameworks>
+  <dependency>
+    <dependentAssembly dependencyType="install" codebase="Application Files\MkvJoiner_1_0_0_0\MkvJoiner.exe.manifest" size="6671">
+      <assemblyIdentity name="MkvJoiner.exe" version="1.0.0.0" publicKeyToken="ec7637d690b96b4f" language="neutral" processorArchitecture="x86" type="win32" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>wtrFfYN1PI2NWm8nJFqLbZljuX8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+<publisherIdentity name="CN=Matt-PC\Matt" issuerKeyHash="86356728fac8b592c96ad900794e32656a0ccc58" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>nDCwytqjolthIOj1tWQ63/LrJ0o=</DigestValue></Reference></SignedInfo><SignatureValue>faLsNJbkXmziM6bC5mR0T085YYe89MhxobBSQJTN1WxAxU+dk3gmzl4QXEsftsULdUAUI14NqisMN9fJC2wGRWlNQnWRHFeuQviArgkKjnMopsr8GFJxND+84zTLe4uUIAhLF/dcmDM9vYdLp/Oc+PB/on2QBQ3hbUUuc+NALmU=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>g8PKhstgse+8oijltHCSgTAm3RFTQCg7JXD2UfCngvDBruq4/5CMzoY3hSzoIun/3jffkU3p4n7nWLM9bjel4munkyX7Kch9TNpfg62c3t36jSwGU3HwgvU4tXYIT9y2KYB/epE+2actdAOnMe2KhWTlD8VoicixewrWv2zZ2VU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="4a27ebf2df3a64b5f5e820615ba2a3dacab0309c" Description="" Url=""><as:assemblyIdentity name="MkvJoiner.application" version="1.0.0.0" publicKeyToken="ec7637d690b96b4f" language="neutral" processorArchitecture="x86" xmlns="urn:schemas-microsoft-com:asm.v1" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=Matt-PC\Matt</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>mTgmoK/ixrCksxmahWTSTn5RB/E=</DigestValue></Reference></SignedInfo><SignatureValue>AY82srw1FqWOnHoeO+qPBFU+fUBxpTZWV08ystsUTmyZCQUZWLntRuBwVoSyolJ6Nux3w2AvmkHQ4V8KH0a+nbx5iIN0865xD9lTMGM7Wi+1U/8DBOznXMnKTofjKLZYL/Ap1ZZHY1QfbBu5zxqiZ6E6eiCZ2FSd+nxMLjTQg7I=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>g8PKhstgse+8oijltHCSgTAm3RFTQCg7JXD2UfCngvDBruq4/5CMzoY3hSzoIun/3jffkU3p4n7nWLM9bjel4munkyX7Kch9TNpfg62c3t36jSwGU3HwgvU4tXYIT9y2KYB/epE+2actdAOnMe2KhWTlD8VoicixewrWv2zZ2VU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIByTCCATKgAwIBAgIQdvXqoMj3X6NKwXp3ysxLSTANBgkqhkiG9w0BAQUFADAjMSEwHwYDVQQDHhgATQBhAHQAdAAtAFAAQwBcAE0AYQB0AHQwHhcNMTUwODEwMjM1NDIwWhcNMTYwODEwMDU1NDIwWjAjMSEwHwYDVQQDHhgATQBhAHQAdAAtAFAAQwBcAE0AYQB0AHQwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAIPDyobLYLHvvKIo5bRwkoEwJt0RU0AoOyVw9lHwp4Lwwa7quP+QjM6GN4Us6CLp/94335FN6eJ+51izPW43peJrp5Ml+ynIfUzaX4OtnN7d+o0sBlNx8IL1OLV2CE/ctimAf3qRPtmnLXQDpzHtioVk5Q/FaInIsXsK1r9s2dlVAgMBAAEwDQYJKoZIhvcNAQEFBQADgYEAHcMoBXK9I4D8xVnpiTKyy1IXKByiUdNbcCnbBst4MqghZHyJG6ihKKatiQD6pHD3k6uFhyPrOX4LREgU9WfTlaFgponB/qFq/QXzAHMvxL3lDkDjxHgVzG/XAcVoGMn/6RuFROM/zG0zoz+fB5ZtfdDFPTYyWwdVzgZ20BrgZ68=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
