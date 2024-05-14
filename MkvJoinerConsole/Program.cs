@@ -13,17 +13,27 @@ namespace MKVCombinationApp
             Console.WriteLine("Folder with Files to Combine?");
             string folderPath = Console.ReadLine().Replace("\"", "");
 
+            string[] folders = Directory.GetDirectories(folderPath);
             // Get all .mkv files in the folder
-            string[] mkvFiles = Directory.GetFiles(folderPath, "*.mkv");
+            foreach (string folder in folders)
+            {
+                Run(folder);
+            }
+            Main(args);
+        }
+
+        private static void Run(string folder)
+        {
+            string[] mkvFiles = Directory.GetFiles(folder, "*.mkv");
 
             if (mkvFiles.Length == 0)
             {
                 Console.WriteLine("No .mkv files found in the folder.");
-                return;
+                //return;
             }
 
             // Generate command arguments to pass to mkvmerge
-            string mkvmergeArgs = $"-o \"{Path.Combine(folderPath, "combined.mkv")}\" " +
+            string mkvmergeArgs = $"-o \"{Path.Combine(folder, "combined.mkv")}\" " +
                                    $"{string.Join(" + ", mkvFiles.Select(f => $"\"{f}\""))}";
 
             // Run mkvmerge to combine .mkv files
@@ -50,7 +60,6 @@ namespace MKVCombinationApp
             }
 
             Console.WriteLine("Combination completed.");
-            Main(args);
         }
     }
 }
