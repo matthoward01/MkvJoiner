@@ -33,7 +33,7 @@ namespace MKVCombinationApp
             }
 
             // Generate command arguments to pass to mkvmerge
-            string mkvmergeArgs = $"-o \"{Path.Combine(folder, "combined.mkv")}\" " +
+            string mkvmergeArgs = $"-o \"{Path.Combine(Directory.GetParent(folder).FullName, $"{Path.GetFileNameWithoutExtension(mkvFiles[0])}.mkv")}\" " +
                                    $"{string.Join(" + ", mkvFiles.Select(f => $"\"{f}\""))}";
 
             // Run mkvmerge to combine .mkv files
